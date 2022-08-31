@@ -11,13 +11,12 @@ class Login extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      username: "",
-      password: "",
-      isShowPassword: false,
+      username: "keydev",
+      password: "123456",
     };
   }
 
-  handleOnChangeUsername = (event) => {
+  handleOnChangeInput = (event) => {
     this.setState({
       username: event.target.value,
     });
@@ -30,15 +29,7 @@ class Login extends Component {
   };
 
   handleLogin = () => {
-    console.log(
-      `username: ${this.state.username} - password: ${this.state.password} `
-    );
-  };
-
-  handleShowHidePassword = () => {
-    this.setState({
-      isShowPassword: !this.state.isShowPassword,
-    });
+    alert("hello key");
   };
   render() {
     return (
@@ -57,32 +48,17 @@ class Login extends Component {
             </div>
             <div className="col-12 form-group login-input">
               <label>Password:</label>
-              <div className="custom-ipt-password">
-                <input
-                  type={this.state.isShowPassword ? "text" : "password"}
-                  className="form-control"
-                  placeholder="Enter your password"
-                  onChange={(event) => this.handleOnChangePassword(event)}
-                />
-                <span
-                  onClick={() => {
-                    this.handleShowHidePassword();
-                  }}
-                >
-                  <i
-                    class={
-                      this.state.isShowPassword
-                        ? "fas fa-eye"
-                        : "fas fa-eye-slash"
-                    }
-                  ></i>
-                </span>
-              </div>
+              <input
+                type="password"
+                className="form-control"
+                placeholder="Enter your password"
+                onChange={(event) => this.handleOnChangePassword(event)}
+              />
             </div>
             <div className="col-12">
               <button
                 className="login-btn"
-                onClick={() => {
+                onClick={(event) => {
                   this.handleLogin();
                 }}
               >

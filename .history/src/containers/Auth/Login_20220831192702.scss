@@ -10,15 +10,9 @@
   .login-container {
     width: 400px;
     height: auto;
+    margin: 0 auto;
     background-color: #fff;
     border-radius: 15px;
-    position: absolute;
-    margin: auto;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    height: 450px;
 
     .login-content {
       padding: 20px;
@@ -32,15 +26,6 @@
 
       .login-input {
         margin: 7px 0;
-        .custom-ipt-password {
-          position: relative;
-          i {
-            position: absolute;
-            right: 10px;
-            top: 11px;
-            cursor: pointer;
-          }
-        }
       }
 
       .login-btn {

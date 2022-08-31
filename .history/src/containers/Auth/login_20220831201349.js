@@ -69,13 +69,7 @@ class Login extends Component {
                     this.handleShowHidePassword();
                   }}
                 >
-                  <i
-                    class={
-                      this.state.isShowPassword
-                        ? "fas fa-eye"
-                        : "fas fa-eye-slash"
-                    }
-                  ></i>
+                  <i class="fas fa-eye"></i>
                 </span>
               </div>
             </div>

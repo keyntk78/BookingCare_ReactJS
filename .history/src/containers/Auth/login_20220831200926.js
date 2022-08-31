@@ -6,6 +6,7 @@ import * as actions from "../../store/actions";
 import "./Login.scss";
 // eslint-disable-next-line no-unused-vars
 import { FormattedMessage } from "react-intl";
+import { Alert } from "bootstrap";
 
 class Login extends Component {
   constructor(props) {
@@ -13,7 +14,6 @@ class Login extends Component {
     this.state = {
       username: "",
       password: "",
-      isShowPassword: false,
     };
   }
 
@@ -35,11 +35,9 @@ class Login extends Component {
     );
   };
 
-  handleShowHidePassword = () => {
-    this.setState({
-      isShowPassword: !this.state.isShowPassword,
-    });
-  };
+  // handleShowHidePassword = () => {
+  //   alert("click me");
+  // };
   render() {
     return (
       <div className="login-background">
@@ -59,24 +57,18 @@ class Login extends Component {
               <label>Password:</label>
               <div className="custom-ipt-password">
                 <input
-                  type={this.state.isShowPassword ? "text" : "password"}
+                  type="password"
                   className="form-control"
                   placeholder="Enter your password"
                   onChange={(event) => this.handleOnChangePassword(event)}
                 />
-                <span
+                {/* <span
                   onClick={() => {
                     this.handleShowHidePassword();
                   }}
                 >
-                  <i
-                    class={
-                      this.state.isShowPassword
-                        ? "fas fa-eye"
-                        : "fas fa-eye-slash"
-                    }
-                  ></i>
-                </span>
+                  <i class="fas fa-eye"></i>
+                </span> */}
               </div>
             </div>
             <div className="col-12">
