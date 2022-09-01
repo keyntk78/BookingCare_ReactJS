@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import { FormattedMessage } from "react-intl";
 import { connect } from "react-redux";
 import { getAllUser } from "../../services/userService";
-import "./UserManage.scss";
 
 class UserManage extends Component {
   constructor(props) {
@@ -31,11 +30,9 @@ class UserManage extends Component {
             <thead>
               <tr>
                 <th scope="col">#</th>
-                <th scope="col">First Name</th>
-                <th scope="col">Last Name</th>
+                <th scope="col">First</th>
+                <th scope="col">Last</th>
                 <th scope="col">Address</th>
-                <th scope="col">Gender</th>
-                <th scope="col">Action</th>
               </tr>
             </thead>
             <tbody>
@@ -48,15 +45,6 @@ class UserManage extends Component {
                         <td>{item.firstName}</td>
                         <td>{item.lastName}</td>
                         <td>{item.address}</td>
-                        <td>{item.gender ? "Male" : "Female"}</td>
-                        <td>
-                          <button className="btn-edit">
-                            <i class="fas fa-edit"></i>
-                          </button>
-                          <button className="btn-delete">
-                            <i class="fas fa-trash"></i>
-                          </button>
-                        </td>
                       </tr>
                     </>
                   );

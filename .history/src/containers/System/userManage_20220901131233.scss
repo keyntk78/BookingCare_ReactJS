@@ -1,0 +1,12 @@
+.btn-edit {
+  width: 50px;
+  border: none;
+  outline: none;
+  background: transparent;
+  color: slateblue;
+
+  &:hover {
+    background-color: transparent !important;
+    color: slateblue;
+  }
+}

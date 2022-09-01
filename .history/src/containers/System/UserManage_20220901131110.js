@@ -48,7 +48,7 @@ class UserManage extends Component {
                         <td>{item.firstName}</td>
                         <td>{item.lastName}</td>
                         <td>{item.address}</td>
-                        <td>{item.gender ? "Male" : "Female"}</td>
+                        <td>{item.gender ? "Male" : "female"}</td>
                         <td>
                           <button className="btn-edit">
                             <i class="fas fa-edit"></i>
