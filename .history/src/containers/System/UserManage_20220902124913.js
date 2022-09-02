@@ -4,7 +4,6 @@ import {
   getAllUser,
   createNewUserService,
   deleteUserService,
-  editUserService,
 } from "../../services/userService";
 import "./UserManage.scss";
 import ModalUser from "./ModalUser";
@@ -92,22 +91,6 @@ class UserManage extends Component {
     });
   };
 
-  doEditUser = async (user) => {
-    try {
-      let res = await editUserService(user);
-      if (res && res.errCode === 0) {
-        this.setState({
-          isOpenModalEditUser: false,
-        });
-        await this.getAllUserFormReact();
-      } else {
-        alert(res.errMessage);
-      }
-    } catch (e) {
-      console.log(e);
-    }
-  };
-
   render() {
     let arrUser = this.state.arrUsers;
     return (
@@ -122,7 +105,7 @@ class UserManage extends Component {
             isOpen={this.state.isOpenModalEditUser}
             toggleUserModal={this.toggleUserEditModal}
             currentUser={this.state.userEdit}
-            editUser={this.doEditUser}
+            // createNewUser={this.createNewUser}
           />
         )}
         <div className="title text-center">Manage users with key</div>

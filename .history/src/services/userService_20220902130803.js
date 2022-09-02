@@ -22,13 +22,12 @@ const deleteUserService = (userId) => {
   });
 };
 
-const editUserService = (data) => {
-  return axios.put(`/api/edit-user`, data);
-  // return axios.put(`/api/edit-user`, {
-  //   data: {
-  //     data: data,
-  //   },
-  // });
+const editUserService = (user) => {
+  return axios.put(`/api/edit-user`, {
+    data: {
+      data: user,
+    },
+  });
 };
 
 export {

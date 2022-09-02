@@ -4,7 +4,6 @@ import {
   getAllUser,
   createNewUserService,
   deleteUserService,
-  editUserService,
 } from "../../services/userService";
 import "./UserManage.scss";
 import ModalUser from "./ModalUser";
@@ -17,8 +16,6 @@ class UserManage extends Component {
     this.state = {
       arrUsers: [],
       isOpenModalUser: false,
-      isOpenModalEditUser: false,
-      userEdit: {},
     };
   }
 
@@ -44,12 +41,6 @@ class UserManage extends Component {
   toggleUserModal = () => {
     this.setState({
       isOpenModalUser: !this.state.isOpenModalUser,
-    });
-  };
-
-  toggleUserEditModal = () => {
-    this.setState({
-      isOpenModalEditUser: !this.state.isOpenModalEditUser,
     });
   };
 
@@ -85,29 +76,6 @@ class UserManage extends Component {
     }
   };
 
-  hanldeEditUser = (user) => {
-    this.setState({
-      isOpenModalEditUser: true,
-      userEdit: user,
-    });
-  };
-
-  doEditUser = async (user) => {
-    try {
-      let res = await editUserService(user);
-      if (res && res.errCode === 0) {
-        this.setState({
-          isOpenModalEditUser: false,
-        });
-        await this.getAllUserFormReact();
-      } else {
-        alert(res.errMessage);
-      }
-    } catch (e) {
-      console.log(e);
-    }
-  };
-
   render() {
     let arrUser = this.state.arrUsers;
     return (
@@ -117,14 +85,6 @@ class UserManage extends Component {
           toggleUserModal={this.toggleUserModal}
           createNewUser={this.createNewUser}
         />
-        {this.state.isOpenModalEditUser && (
-          <ModalEditUser
-            isOpen={this.state.isOpenModalEditUser}
-            toggleUserModal={this.toggleUserEditModal}
-            currentUser={this.state.userEdit}
-            editUser={this.doEditUser}
-          />
-        )}
         <div className="title text-center">Manage users with key</div>
         <div className="mx-1"></div>
         <div className="container">
@@ -158,12 +118,7 @@ class UserManage extends Component {
                         <td>{item.address}</td>
                         {/* <td>{item.gender ? "Male" : "Female"}</td> */}
                         <td>
-                          <button
-                            className="btn-edit"
-                            onClick={() => {
-                              this.hanldeEditUser(item);
-                            }}
-                          >
+                          <button className="btn-edit">
                             <i className="fas fa-edit"></i>
                           </button>
                           <button

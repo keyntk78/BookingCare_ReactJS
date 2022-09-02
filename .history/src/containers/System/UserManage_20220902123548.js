@@ -4,7 +4,6 @@ import {
   getAllUser,
   createNewUserService,
   deleteUserService,
-  editUserService,
 } from "../../services/userService";
 import "./UserManage.scss";
 import ModalUser from "./ModalUser";
@@ -86,26 +85,11 @@ class UserManage extends Component {
   };
 
   hanldeEditUser = (user) => {
+    console.log("check eidt:", user);
     this.setState({
       isOpenModalEditUser: true,
       userEdit: user,
     });
-  };
-
-  doEditUser = async (user) => {
-    try {
-      let res = await editUserService(user);
-      if (res && res.errCode === 0) {
-        this.setState({
-          isOpenModalEditUser: false,
-        });
-        await this.getAllUserFormReact();
-      } else {
-        alert(res.errMessage);
-      }
-    } catch (e) {
-      console.log(e);
-    }
   };
 
   render() {
@@ -117,14 +101,11 @@ class UserManage extends Component {
           toggleUserModal={this.toggleUserModal}
           createNewUser={this.createNewUser}
         />
-        {this.state.isOpenModalEditUser && (
-          <ModalEditUser
-            isOpen={this.state.isOpenModalEditUser}
-            toggleUserModal={this.toggleUserEditModal}
-            currentUser={this.state.userEdit}
-            editUser={this.doEditUser}
-          />
-        )}
+        <ModalEditUser
+          isOpen={this.state.isOpenModalEditUser}
+          toggleUserModal={this.toggleUserEditModal}
+          // createNewUser={this.createNewUser}
+        />
         <div className="title text-center">Manage users with key</div>
         <div className="mx-1"></div>
         <div className="container">

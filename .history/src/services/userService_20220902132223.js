@@ -26,7 +26,7 @@ const editUserService = (data) => {
   return axios.put(`/api/edit-user`, data);
   // return axios.put(`/api/edit-user`, {
   //   data: {
-  //     data: data,
+  //     data: user,
   //   },
   // });
 };
