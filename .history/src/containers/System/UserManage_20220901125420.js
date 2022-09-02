@@ -26,7 +26,7 @@ class UserManage extends Component {
       <div className="user-container">
         <div className="title text-center">Manage users with key</div>
         <div className="container">
-          <table class="table table-hover">
+          <table className="table table-hover">
             <thead>
               <tr>
                 <th scope="col">#</th>
@@ -49,7 +49,7 @@ class UserManage extends Component {
                         <td>{item.address}</td>
                         <td>{item.gender ? "Male" : "female"}</td>
                         <td>
-                          <button type="button" class="btn btn-primary">
+                          <button type="button" className="btn btn-primary">
                             Edit
                           </button>
                         </td>

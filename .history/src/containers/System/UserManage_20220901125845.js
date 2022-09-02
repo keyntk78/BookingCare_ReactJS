@@ -26,7 +26,7 @@ class UserManage extends Component {
       <div className="user-container">
         <div className="title text-center">Manage users with key</div>
         <div className="container">
-          <div class="table table-hover">
+          <div className="table table-hover">
             <thead>
               <tr>
                 <th scope="col">#</th>

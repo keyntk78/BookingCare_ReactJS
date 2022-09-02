@@ -46,7 +46,7 @@ class Login extends Component {
             </div>
             <div className="col-12 social-login text-center">
               <i className="fab fa-google-plus-g google"></i>
-              <i class="fab fa-facebook facebook"></i>
+              <i className="fab fa-facebook facebook"></i>
             </div>
           </div>
         </div>

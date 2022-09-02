@@ -1,0 +1,35 @@
+.btn-edit {
+  width: 50px;
+  border: none;
+  outline: none;
+  background: transparent;
+  color: slateblue;
+
+  &:hover {
+    background-color: transparent !important;
+    color: slateblue;
+  }
+}
+
+.btn-delete {
+  width: 50px;
+  border: none;
+  outline: none;
+  background: transparent;
+  color: red;
+
+  &:hover {
+    background-color: transparent !important;
+    color: red;
+  }
+}
+
+// scss modal
+.modal-user-container {
+  .modal-body {
+    padding-bottom: 20px;
+    label {
+      margin-bottom: 5px;
+    }
+  }
+}

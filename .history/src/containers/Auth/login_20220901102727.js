@@ -81,7 +81,7 @@ class Login extends Component {
                   }}
                 >
                   <i
-                    class={
+                    className={
                       this.state.isShowPassword
                         ? "fas fa-eye"
                         : "fas fa-eye-slash"
@@ -109,7 +109,7 @@ class Login extends Component {
             </div>
             <div className="col-12 social-login">
               <i className="fab fa-google-plus-g google"></i>
-              <i class="fab fa-facebook-f facebook"></i>
+              <i className="fab fa-facebook-f facebook"></i>
             </div>
           </div>
         </div>

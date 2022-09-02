@@ -57,7 +57,7 @@ class Login extends Component {
                   placeholder="Enter your password"
                   onChange={(event) => this.handleOnChangePassword(event)}
                 />
-                <i class="fas fa-eye"></i>
+                <i className="fas fa-eye"></i>
               </div>
             </div>
             <div className="col-12">
@@ -78,7 +78,7 @@ class Login extends Component {
             </div>
             <div className="col-12 social-login">
               <i className="fab fa-google-plus-g google"></i>
-              <i class="fab fa-facebook-f facebook"></i>
+              <i className="fab fa-facebook-f facebook"></i>
             </div>
           </div>
         </div>
