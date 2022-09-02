@@ -54,7 +54,7 @@ class UserManage extends Component {
           isOpenModalUser: false,
         });
 
-        emitter.emit("EVENT_CLEAR_MODAL_DATA");
+        emitter.emit("EVENT_CLEAR_MODAL_DATA", { id: "id" });
       }
       console.log("respone create user:", response);
     } catch (e) {

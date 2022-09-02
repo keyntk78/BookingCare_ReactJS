@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { FormattedMessage } from "react-intl";
 import { connect } from "react-redux";
 import {
   getAllUser,
@@ -7,7 +8,6 @@ import {
 } from "../../services/userService";
 import "./UserManage.scss";
 import ModalUser from "./ModalUser";
-import { emitter } from "../../utils/emitter";
 
 class UserManage extends Component {
   constructor(props) {
@@ -53,8 +53,6 @@ class UserManage extends Component {
         this.setState({
           isOpenModalUser: false,
         });
-
-        emitter.emit("EVENT_CLEAR_MODAL_DATA");
       }
       console.log("respone create user:", response);
     } catch (e) {

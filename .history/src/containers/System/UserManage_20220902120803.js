@@ -53,7 +53,6 @@ class UserManage extends Component {
         this.setState({
           isOpenModalUser: false,
         });
-
         emitter.emit("EVENT_CLEAR_MODAL_DATA");
       }
       console.log("respone create user:", response);

@@ -19,14 +19,8 @@ class ModalUser extends Component {
   }
 
   listenToEmitter() {
-    emitter.on("EVENT_CLEAR_MODAL_DATA", () => {
-      this.setState({
-        email: "",
-        password: "",
-        firstName: "",
-        lastName: "",
-        address: "",
-      });
+    emitter.on("EVENT_CLEAR_MODAL_DATA", (data) => {
+      console.log("listen emitter: ", data);
     });
   }
 
