@@ -1,0 +1,9 @@
+.home-header-container {
+  height: 60px;
+  border: 1px solid red;
+  .home-header-content {
+    height: 100%;
+    width: 100%;
+    display: flex;
+  }
+}

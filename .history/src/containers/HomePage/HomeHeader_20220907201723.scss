@@ -1,0 +1,21 @@
+.home-header-container {
+  height: 60px;
+  border: 1px solid red;
+  .home-header-content {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    .left-content {
+      width: 25%;
+      border: 1px solid blue;
+    }
+    .center-content {
+      width: 50%;
+      border: 1px solid black;
+    }
+    .right-content {
+      width: 25%;
+      border: 1px solid gray;
+    }
+  }
+}
