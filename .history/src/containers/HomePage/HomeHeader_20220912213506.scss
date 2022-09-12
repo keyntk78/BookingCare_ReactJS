@@ -113,8 +113,8 @@
     .options {
       text-align: center;
       display: flex;
-      gap: 50px;
-      justify-content: center;
+      gap: 30px;
+      justify-content: space-between;
 
       .option-child {
         border: 1px solid red;

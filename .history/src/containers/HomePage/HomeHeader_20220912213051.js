@@ -77,7 +77,7 @@ class HomeHeader extends Component {
               </div>
               <div className="option-child">
                 <div className="icon-child">
-                  <i className="fas fa-mobile"></i>
+                  <i className="fas fa-microscope"></i>
                 </div>
                 <div className="text-child">Xét nghiệm y học</div>
               </div>

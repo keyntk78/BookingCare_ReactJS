@@ -111,15 +111,10 @@
     height: 50%;
 
     .options {
+      width: 100px;
       text-align: center;
-      display: flex;
-      gap: 50px;
-      justify-content: center;
-
       .option-child {
         border: 1px solid red;
-        width: 100px;
-
         .icon-child {
           background-color: #fff;
           width: 40px;

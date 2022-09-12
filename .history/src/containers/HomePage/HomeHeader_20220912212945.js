@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { connect } from "react-redux";
 import "./HomeHeader.scss";
 
-class HomeHeader extends Component {
+className HomeHeader extends Component {
   render() {
     return (
       <>
@@ -51,7 +51,7 @@ class HomeHeader extends Component {
             <div className="title1">NỀN TẢNG Y TẾ</div>
             <div className="title2">CHĂM SÓC SỨC KHỎE TOÀN DIỆN</div>
             <div className="search">
-              <i class="fas fa-search"></i>
+              <i className="fas fa-search"></i>
               <input type="text" placeholder="Tìm chuyên khoa khám bệnh" />
             </div>
           </div>
@@ -77,7 +77,7 @@ class HomeHeader extends Component {
               </div>
               <div className="option-child">
                 <div className="icon-child">
-                  <i className="fas fa-mobile"></i>
+                  <i className="fas fa-microscope"></i>
                 </div>
                 <div className="text-child">Xét nghiệm y học</div>
               </div>
