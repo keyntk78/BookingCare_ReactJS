@@ -12,15 +12,15 @@
   },
 
   "banner": {
-    "title1": "MEDICAL BACKGROUND",
-    "title2": "COMPREHENSIVE HEALTH CARE",
+    "title1": "NỀN TẢNG Y TẾ",
+    "title2": "CHĂM SÓC SỨC KHỎE TOÀN DIỆN",
     "text-search": "Tìm chuyên khoa khám bệnh",
-    "child1": "Specialized examination",
-    "child2": "Remote examination",
-    "child3": "General examination",
-    "child4": "Medical test",
-    "child5": "Mental health",
-    "child6": "Dental examination"
+    "child1": "Khám chuyên khoa",
+    "child2": "Khám từ xa",
+    "child3": "Khám tổng quát",
+    "child4": "Xét nghiệm y học",
+    "child5": "Sức khỏe tinh thần",
+    "child6": "Khám nha khoa"
   },
 
   "common": {

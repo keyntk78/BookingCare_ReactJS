@@ -79,7 +79,7 @@ class HomeHeader extends Component {
               <i class="fas fa-search"></i>
               <input
                 type="text"
-                placeholder={<FormattedMessage id="banner.text-search" />}
+                placeholder={<FormattedMessage id="banner.child1" />}
               />
             </div>
           </div>

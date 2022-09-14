@@ -50,6 +50,7 @@ class HomeHeader extends Component {
                 <div>
                   <b>
                     <FormattedMessage id="homeHeader.fee" />
+                    Gói khám
                   </b>
                 </div>
                 <div className="sub-title">
@@ -60,7 +61,7 @@ class HomeHeader extends Component {
             <div className="right-content">
               <div className="support">
                 <i className="fas fa-question-circle"></i>
-                <FormattedMessage id="homeHeader.support" />
+                Hổ Trợ
               </div>
               <div className="flag-language-vi active">VN</div>
               <div className="flag-language-en">EN</div>
@@ -69,18 +70,11 @@ class HomeHeader extends Component {
         </div>
         <div className="home-header-banner">
           <div className="content-up">
-            <div className="title1">
-              <FormattedMessage id="banner.title1" />
-            </div>
-            <div className="title2">
-              <FormattedMessage id="banner.title2" />
-            </div>
+            <div className="title1">NỀN TẢNG Y TẾ</div>
+            <div className="title2">CHĂM SÓC SỨC KHỎE TOÀN DIỆN</div>
             <div className="search">
               <i class="fas fa-search"></i>
-              <input
-                type="text"
-                placeholder={<FormattedMessage id="banner.text-search" />}
-              />
+              <input type="text" placeholder="Tìm chuyên khoa khám bệnh" />
             </div>
           </div>
           <div className="content-down">
@@ -89,49 +83,37 @@ class HomeHeader extends Component {
                 <div className="icon-child">
                   <i className="fas fa-hospital"></i>
                 </div>
-                <div className="text-child">
-                  <FormattedMessage id="banner.child1" />
-                </div>
+                <div className="text-child">Khám chuyên khoa</div>
               </div>
               <div className="option-child">
                 <div className="icon-child">
                   <i className="fas fa-mobile"></i>
                 </div>
-                <div className="text-child">
-                  <FormattedMessage id="banner.child2" />
-                </div>
+                <div className="text-child">Khám từ xa</div>
               </div>
               <div className="option-child">
                 <div className="icon-child">
                   <i className="fas fa-hospital-alt"></i>
                 </div>
-                <div className="text-child">
-                  <FormattedMessage id="banner.child3" />
-                </div>
+                <div className="text-child">Khám tổng quát</div>
               </div>
               <div className="option-child">
                 <div className="icon-child">
                   <i class="fas fa-flask"></i>
                 </div>
-                <div className="text-child">
-                  <FormattedMessage id="banner.child4" />
-                </div>
+                <div className="text-child">Xét nghiệm y học</div>
               </div>
               <div className="option-child">
                 <div className="icon-child">
                   <i class="fas fa-walking"></i>
                 </div>
-                <div className="text-child">
-                  <FormattedMessage id="banner.child5" />
-                </div>
+                <div className="text-child">Sức khỏe tinh thần</div>
               </div>
               <div className="option-child">
                 <div className="icon-child">
                   <i class="fas fa-user-md"></i>
                 </div>
-                <div className="text-child">
-                  <FormattedMessage id="banner.child6" />
-                </div>
+                <div className="text-child">Khám nha khoa</div>
               </div>
             </div>
           </div>

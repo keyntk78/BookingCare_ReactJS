@@ -1,26 +1,6 @@
 {
   "homeHeader": {
-    "speciality": "Medical specialty",
-    "searchDoctor": "Find a doctor by specialty",
-    "healthFacility": "Health facilities",
-    "selectRoom": "Choose hospital clinic",
-    "doctor": "Doctor",
-    "selectDoctor": "Choose a good doctor",
-    "fee": "Checkup package",
-    "checkHealth": "General health check",
-    "support": "Support"
-  },
-
-  "banner": {
-    "title1": "MEDICAL BACKGROUND",
-    "title2": "COMPREHENSIVE HEALTH CARE",
-    "text-search": "Tìm chuyên khoa khám bệnh",
-    "child1": "Specialized examination",
-    "child2": "Remote examination",
-    "child3": "General examination",
-    "child4": "Medical test",
-    "child5": "Mental health",
-    "child6": "Dental examination"
+    "speciality": "Medical specialty"
   },
 
   "common": {
