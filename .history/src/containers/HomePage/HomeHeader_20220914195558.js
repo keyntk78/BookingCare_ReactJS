@@ -7,15 +7,16 @@ import { FormattedMessage } from "react-intl";
 
 import { LANGUAGES } from "../../utils/constant";
 import { changeLanguageApp } from "../../store/actions/appActions";
+import { lang } from "moment/moment";
 
 class HomeHeader extends Component {
   changeLanguage = (language) => {
     this.props.changeLanguageAppRedux(language);
+    alert(language);
   };
 
   render() {
-    let language = this.props.language;
-
+    console.log("check prop:", this.props);
     return (
       <>
         <div className="home-header-container">
@@ -73,24 +74,12 @@ class HomeHeader extends Component {
                   <FormattedMessage id="homeHeader.support" />
                 </span>
               </div>
-              <div
-                className={
-                  language === LANGUAGES.VI
-                    ? "flag-language-vi active"
-                    : "flag-language-vi"
-                }
-              >
+              <div className="flag-language-vi active">
                 <span onClick={() => this.changeLanguage(LANGUAGES.VI)}>
                   VN
                 </span>
               </div>
-              <div
-                className={
-                  language === LANGUAGES.EN
-                    ? "flag-language-en active"
-                    : "flag-language-en"
-                }
-              >
+              <div className="flag-language-en">
                 <span onClick={() => this.changeLanguage(LANGUAGES.EN)}>
                   EN
                 </span>

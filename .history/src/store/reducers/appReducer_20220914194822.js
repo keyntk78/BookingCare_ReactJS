@@ -32,9 +32,9 @@ const appReducer = (state = initialState, action) => {
         },
       };
     case actionTypes.CHANGE_LANGUAGE:
+      console.log("key check redux:", action);
       return {
         ...state,
-        language: action.language,
       };
 
     default:

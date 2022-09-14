@@ -30,13 +30,13 @@ const appReducer = (state = initialState, action) => {
           ...state.contentOfConfirmModal,
           ...action.contentOfConfirmModal,
         },
-      };
-    case actionTypes.CHANGE_LANGUAGE:
+        case actionTypes.APP_START_UP_COMPLETE:
       return {
         ...state,
-        language: action.language,
+        started: true,
       };
-
+      };
+      
     default:
       return state;
   }

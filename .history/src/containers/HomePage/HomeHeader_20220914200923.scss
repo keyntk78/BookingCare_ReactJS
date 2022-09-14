@@ -64,9 +64,6 @@
           opacity: 1;
           color: orange;
         }
-        &:hover {
-          opacity: 1;
-        }
       }
 
       .flag-language-en {
@@ -76,10 +73,6 @@
         &.active {
           opacity: 1;
           color: blue;
-        }
-
-        &:hover {
-          opacity: 1;
         }
       }
     }

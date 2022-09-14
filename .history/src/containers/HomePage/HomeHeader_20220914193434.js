@@ -1,21 +1,13 @@
-/* eslint-disable no-unused-vars */
 import React, { Component } from "react";
 import { connect } from "react-redux";
 import "./HomeHeader.scss";
 import logo from "../../assets/logo.svg";
 import { FormattedMessage } from "react-intl";
-
-import { LANGUAGES } from "../../utils/constant";
-import { changeLanguageApp } from "../../store/actions/appActions";
+import { LANGUAGES } from "../../utils";
 
 class HomeHeader extends Component {
-  changeLanguage = (language) => {
-    this.props.changeLanguageAppRedux(language);
-  };
-
   render() {
-    let language = this.props.language;
-
+    console.log("check prop:", this.props);
     return (
       <>
         <div className="home-header-container">
@@ -73,27 +65,11 @@ class HomeHeader extends Component {
                   <FormattedMessage id="homeHeader.support" />
                 </span>
               </div>
-              <div
-                className={
-                  language === LANGUAGES.VI
-                    ? "flag-language-vi active"
-                    : "flag-language-vi"
-                }
-              >
-                <span onClick={() => this.changeLanguage(LANGUAGES.VI)}>
-                  VN
-                </span>
+              <div className="flag-language-vi active">
+                <span onClick={() => this.changeLanguage("vi")}>VN</span>
               </div>
-              <div
-                className={
-                  language === LANGUAGES.EN
-                    ? "flag-language-en active"
-                    : "flag-language-en"
-                }
-              >
-                <span onClick={() => this.changeLanguage(LANGUAGES.EN)}>
-                  EN
-                </span>
+              <div className="flag-language-en">
+                <span onClick={() => this.changeLanguage}>EN</span>
               </div>
             </div>
           </div>
@@ -107,7 +83,7 @@ class HomeHeader extends Component {
               <FormattedMessage id="banner.title2" />
             </div>
             <div className="search">
-              <i className="fas fa-search"></i>
+              <i class="fas fa-search"></i>
               <FormattedMessage id="banner.text-search">
                 {(placeholder) => (
                   <input type="text" placeholder={placeholder} />
@@ -148,7 +124,7 @@ class HomeHeader extends Component {
               </div>
               <div className="option-child">
                 <div className="icon-child">
-                  <i className="fas fa-flask"></i>
+                  <i class="fas fa-flask"></i>
                 </div>
                 <div className="text-child">
                   <FormattedMessage id="banner.child4" />
@@ -156,7 +132,7 @@ class HomeHeader extends Component {
               </div>
               <div className="option-child">
                 <div className="icon-child">
-                  <i className="fas fa-walking"></i>
+                  <i class="fas fa-walking"></i>
                 </div>
                 <div className="text-child">
                   <FormattedMessage id="banner.child5" />
@@ -164,7 +140,7 @@ class HomeHeader extends Component {
               </div>
               <div className="option-child">
                 <div className="icon-child">
-                  <i className="fas fa-user-md"></i>
+                  <i class="fas fa-user-md"></i>
                 </div>
                 <div className="text-child">
                   <FormattedMessage id="banner.child6" />
@@ -186,9 +162,7 @@ const mapStateToProps = (state) => {
 };
 
 const mapDispatchToProps = (dispatch) => {
-  return {
-    changeLanguageAppRedux: (language) => dispatch(changeLanguageApp(language)),
-  };
+  return {};
 };
 
 export default connect(mapStateToProps, mapDispatchToProps)(HomeHeader);

@@ -61,25 +61,15 @@
         cursor: pointer;
         opacity: 0.2;
         &.active {
-          opacity: 1;
           color: orange;
-        }
-        &:hover {
-          opacity: 1;
         }
       }
 
       .flag-language-en {
         margin: 0 10px;
-        opacity: 0.2;
         cursor: pointer;
         &.active {
-          opacity: 1;
           color: blue;
-        }
-
-        &:hover {
-          opacity: 1;
         }
       }
     }

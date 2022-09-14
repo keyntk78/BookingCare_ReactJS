@@ -15,6 +15,7 @@ class HomeHeader extends Component {
 
   render() {
     let language = this.props.language;
+    console.log("check language:", language);
 
     return (
       <>
@@ -91,7 +92,7 @@ class HomeHeader extends Component {
                     : "flag-language-en"
                 }
               >
-                <span onClick={() => this.changeLanguage(LANGUAGES.EN)}>
+                <span onClick={() => this.changeLanguage(LANGUAGES.VI)}>
                   EN
                 </span>
               </div>
