@@ -142,19 +142,6 @@
 
   .section-About-content {
     display: flex;
-    gap: 15px;
-    width: 100%;
-    .content-left {
-      width: 60%;
-    }
-    .content-right {
-      width: 40%;
-      padding-top: 15px;
-      p {
-        text-align: justify;
-        font-style: italic;
-      }
-    }
   }
 }
 

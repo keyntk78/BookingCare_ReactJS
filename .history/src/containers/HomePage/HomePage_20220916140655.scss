@@ -77,9 +77,7 @@
     background: #fff;
   }
   &.section-About {
-    height: 500px !important;
-
-    border-top: 1px solid #f5f5f5;
+    border: 1px solid red;
   }
 
   .section-body {
@@ -132,43 +130,8 @@
   }
 }
 
-.section-About {
-  padding: 0 195px;
-  .section-About-header {
-    font-size: 20px;
-    font-weight: 600;
-    padding: 20px 0;
-  }
-
-  .section-About-content {
-    display: flex;
-    gap: 15px;
-    width: 100%;
-    .content-left {
-      width: 60%;
-    }
-    .content-right {
-      width: 40%;
-      padding-top: 15px;
-      p {
-        text-align: justify;
-        font-style: italic;
-      }
-    }
-  }
-}
-
 .home-footer {
-  height: 50px;
-  text-align: center;
+  height: 80px;
   padding: 0 195px;
   background-color: #64b9e5;
-  p {
-    padding-top: 15px;
-    color: #fff;
-
-    a {
-      text-decoration: unset;
-    }
-  }
 }

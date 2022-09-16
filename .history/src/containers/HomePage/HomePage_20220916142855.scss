@@ -77,9 +77,8 @@
     background: #fff;
   }
   &.section-About {
+    border: 1px solid red;
     height: 500px !important;
-
-    border-top: 1px solid #f5f5f5;
   }
 
   .section-body {
@@ -128,32 +127,6 @@
     .customize-boder {
       border: 1px solid rgb(216, 208, 208);
       padding: 20px 0;
-    }
-  }
-}
-
-.section-About {
-  padding: 0 195px;
-  .section-About-header {
-    font-size: 20px;
-    font-weight: 600;
-    padding: 20px 0;
-  }
-
-  .section-About-content {
-    display: flex;
-    gap: 15px;
-    width: 100%;
-    .content-left {
-      width: 60%;
-    }
-    .content-right {
-      width: 40%;
-      padding-top: 15px;
-      p {
-        text-align: justify;
-        font-style: italic;
-      }
     }
   }
 }
