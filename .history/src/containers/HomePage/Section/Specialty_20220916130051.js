@@ -4,6 +4,8 @@ import { connect } from "react-redux";
 import { FormattedMessage } from "react-intl";
 import Slider from "react-slick";
 
+import specialtyImg from "../../../assets/Speccialty/co-xuong-khop.jpg";
+
 class Specialty extends Component {
   render() {
     return (

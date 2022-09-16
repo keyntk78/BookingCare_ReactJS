@@ -1,8 +1,11 @@
 /* eslint-disable no-unused-vars */
 import React, { Component } from "react";
 import { connect } from "react-redux";
+import "./Specialty.scss";
 import { FormattedMessage } from "react-intl";
 import Slider from "react-slick";
+
+import specialtyImg from "../../../assets/Speccialty/co-xuong-khop.jpg";
 
 class Specialty extends Component {
   render() {
@@ -15,28 +18,28 @@ class Specialty extends Component {
           </div>
           <div className="section-body">
             <Slider {...this.props.settings}>
-              <div className="section-customize">
-                <div className="bg-image section-specialty"></div>
+              <div className="specialty-customize">
+                <div className="bg-image"></div>
                 <div>Cơ xương khớp 1</div>
               </div>
-              <div className="section-customize">
-                <div className="bg-image section-specialty"></div>
+              <div className="specialty-customize">
+                <div className="bg-image"></div>
                 <div>Cơ xương khớp 2</div>
               </div>
-              <div className="section-customize">
-                <div className="bg-image section-specialty"></div>
+              <div className="specialty-customize">
+                <div className="bg-image"></div>
                 <div>Cơ xương khớp 3</div>
               </div>
-              <div className="section-customize">
-                <div className="bg-image section-specialty"></div>
+              <div className="specialty-customize">
+                <div className="bg-image"></div>
                 <div>Cơ xương khớp 4</div>
               </div>
-              <div className="section-customize">
-                <div className="bg-image section-specialty"></div>
+              <div className="specialty-customize">
+                <div className="bg-image"></div>
                 <div>Cơ xương khớp 5</div>
               </div>
-              <div className="section-customize">
-                <div className="bg-image section-specialty"></div>
+              <div className="specialty-customize">
+                <div className="bg-image"></div>
                 <div>Cơ xương khớp 6</div>
               </div>
             </Slider>

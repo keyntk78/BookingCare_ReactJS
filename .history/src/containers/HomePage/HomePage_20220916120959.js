@@ -3,9 +3,6 @@ import { connect } from "react-redux";
 import HomeHeader from "./HomeHeader";
 import Specialty from "./Section/Specialty";
 import MedicalFacility from "./Section/MedicalFacility";
-import OutstandingDoctor from "./Section/OutstandingDoctor";
-import HandBook from "./Section/HandBook";
-
 import "./HomePage.scss";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -25,8 +22,7 @@ class HomePage extends Component {
         <HomeHeader />
         <Specialty settings={settings} />
         <MedicalFacility settings={settings} />
-        <OutstandingDoctor settings={settings} />
-        <HandBook settings={settings} />
+        <div style={{ height: "300px" }}></div>
       </div>
     );
   }
